@@ -27,3 +27,4 @@ km # print results
 wss<-numeric(8) # Within cluster sum of squares
 for (k in 1:8) wss[k] <- sum(kmeans(a,k,nstart=20)$withinss)
 plot(1:8,wss) # wss versus k clusters
+
